@@ -14,6 +14,11 @@ server.register(require('vision'), (err) => {
         console.log("Failed to load vision.");
     }
 });
+server.register({  
+  register: require('inert')
+}, function(err) {
+  if (err) throw err
+});
 
 server.views({  
     engines: {
@@ -40,6 +45,20 @@ var routes = [
 
             return reply.view('index', data);
         }
+    },
+    {
+        method : 'GET',
+        path: '/js/deploy.js',
+        handler:function(request, reply) {
+            reply.file('./client/js/deploy.js');
+        }
+    },
+    {
+        method : 'GET',
+        path: '/css/deploy.css',
+        handler:function(request, reply) {
+            reply.file('./client/css/deploy.css');
+        }
     }
     ];
 
@@ -50,3 +69,4 @@ var routes = [
         if (!err) console.log("Server running at :" + server.info.uri);
         else console.log(err); 
     });
+

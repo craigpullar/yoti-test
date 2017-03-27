@@ -1,6 +1,6 @@
 {
   "name": "domore",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A project workflow for developers",
   "main": "index.html",
   "scripts": {
@@ -13,16 +13,26 @@
   "author": "cpullar@homeaway.co.uk",
   "license": "ISC",
   "devDependencies": {
-    "babel-preset-es2015": "^6.24.0",
+    "babel-cli": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
     "grunt-babel": "^6.0.0",
+    "grunt-browserify": "^5.0.0",
+    "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-uglify": "^2.2.0",
+    "grunt-contrib-watch": "^1.0.0",
     "grunt-git": "^1.0.3",
+    "grunt-hapi": "^0.12.0",
+    "grunt-react": "^0.12.3",
     "grunt-release": "^0.14.0",
-    "grunt-sass": "^2.0.0"
+    "grunt-sass": "^2.0.0",
+    "grunt-shell": "^2.1.0"
   },
   "dependencies": {
+    "babel-polyfill": "^6.23.0",
     "handlebars": "^4.0.6",
     "inert": "^4.1.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
     "vision": "^4.1.1"
   }
 }
