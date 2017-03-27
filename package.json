@@ -1,6 +1,6 @@
 {
   "name": "domore",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A project workflow for developers",
   "main": "index.html",
   "scripts": {
@@ -19,5 +19,10 @@
     "grunt-git": "^1.0.3",
     "grunt-release": "^0.14.0",
     "grunt-sass": "^2.0.0"
+  },
+  "dependencies": {
+    "handlebars": "^4.0.6",
+    "inert": "^4.1.0",
+    "vision": "^4.1.1"
   }
 }
