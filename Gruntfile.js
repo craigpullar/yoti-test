@@ -31,7 +31,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-handlebars');
 	grunt.registerTask('push', function(args) {
 
-		grunt.task.run(['build','gitadd', 'release:'+args]);
+		grunt.task.run(['gitadd', 'release:'+args]);
 
 	});
 
