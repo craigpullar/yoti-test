@@ -2,13 +2,13 @@
 	"version": 3,
 	"file": "deploy.css",
 	"sources": [
-		"main.sass",
-		"globals.sass",
-		"mixins.sass",
-		"partials.sass",
+		"main.scss",
+		"globals.scss",
+		"mixins.scss",
+		"partials.scss",
 		"layout_default.sass",
-		"view_index.sass"
+		"view_index.scss"
 	],
 	"names": [],
-	"mappings": "AAAA,UAAU;ACAV,aAAa;ACAb,YAAY;ACAZ,cAAc;ACAd,qBAAqB;ACArB,kBAAkB"
+	"mappings": "AAAA,UAAU;ACAV,aAAa;ACAb,YAAY;ACAZ,cAAc;ACAd,qBAAqB;ACArB,kBAAkB;AAElB,AAAA,KAAK,CAAC;EAAC,KAAK,EJDL,KAAK,GICS"
 }

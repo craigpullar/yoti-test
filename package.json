@@ -1,6 +1,6 @@
 {
   "name": "domore",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "A project workflow for developers",
   "main": "index.html",
   "scripts": {
@@ -30,9 +30,12 @@
   "dependencies": {
     "babel-polyfill": "^6.23.0",
     "handlebars": "^4.0.6",
+    "hapi": "^16.1.0",
+    "hapi-rethinkdb": "^2.0.1",
     "inert": "^4.1.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
+    "rethinkdb": "^2.3.3",
     "vision": "^4.1.1"
   }
 }
