@@ -1,3 +1,2 @@
-# doMore.
+# A full-stack dev environment for node developers.
 
-A project workflow manager for developers
