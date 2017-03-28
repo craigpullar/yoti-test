@@ -1,14 +1,14 @@
 {
-  "name": "domore",
-  "version": "0.1.4",
-  "description": "A project workflow for developers",
+  "name": "js-full-stack-dev-env",
+  "version": "1.0.0",
+  "description": "A full stack dev environment based on node js",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.wvrgroup.internal:cpullar/doMore.git"
+    "url": "git@github.wvrgroup.internal:cpullar/js-full-stack-dev-env.git"
   },
   "author": "cpullar@homeaway.co.uk",
   "license": "ISC",
