@@ -31,8 +31,9 @@ server.views({
     layoutPath: './client/layouts',
     layout: 'default',
     //helpersPath: 'views/helpers',
-    partialsPath: './client/partials'
+    // partialsPath: './client/partials'
 });
+
 
 
 

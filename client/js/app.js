@@ -4,8 +4,6 @@ import * as components from "./components";
 
 import React from 'react';
 
-console.log(globals.foo_test);
-
 components.h5;
 
 
