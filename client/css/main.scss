@@ -1,9 +1,11 @@
-/* main */
 @import 'globals';
 @import 'mixins';
 @import 'partials';
 @import 'layout_default';
 @import 'view_index';
 
+html {
+	background:pink;
+}
 
 

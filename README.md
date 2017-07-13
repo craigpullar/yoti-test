@@ -18,7 +18,7 @@ This will start an instance of rethinkdb on your pc.
 
 To get the server up and going run the following command:
 
-`$ grunt server`
+`$ npm start` or `$ grunt server`
 
 Finally start the watch task on your client files:
 

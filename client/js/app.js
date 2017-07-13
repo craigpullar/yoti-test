@@ -1,10 +1,9 @@
-/* Main */
 import * as globals from "./globals";
-import * as components from "./components";
-
+import ".././css/main.scss";
 import React from 'react';
+import ReactDOM from 'react-dom';
 
-components.h5;
+ReactDOM.render(<h1>Hello world!</h1>, document.getElementById('app'));
 
 
 
