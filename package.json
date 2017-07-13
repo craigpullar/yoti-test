@@ -1,10 +1,10 @@
 {
   "name": "js-full-stack-dev-env",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A full stack dev environment based on node js",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server/server.js"
   },
   "repository": {
     "type": "git",
@@ -27,9 +27,7 @@
     "grunt-react": "^0.12.3",
     "grunt-release": "^0.14.0",
     "grunt-sass": "^2.0.0",
-    "grunt-shell": "^2.1.0"
-  },
-  "dependencies": {
+    "grunt-shell": "^2.1.0",
     "babel-polyfill": "^6.23.0",
     "handlebars": "^4.0.6",
     "hapi": "^16.1.0",
@@ -39,5 +37,6 @@
     "react-dom": "^15.4.2",
     "rethinkdb": "^2.3.3",
     "vision": "^4.1.1"
-  }
+  },
+  "dependencies": {}
 }

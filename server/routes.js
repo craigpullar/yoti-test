@@ -1,6 +1,6 @@
 let routes = require('./models/Routes');
-let db = require('./database');
-db.connect('localhost', 28015, '{admin_pass}', 'doMore');
+// let db = require('./database');
+// db.connect('localhost', 28015, '{admin_pass}', 'doMore');
 
 
 //Pages Routes
@@ -14,11 +14,14 @@ routes.addRoute('GET','/', (request,reply) => {
 
 
 //Resource Routes
-routes.addRoute('GET','/js/deploy.js', (request,reply) => {
-	reply.file('./client/js/deploy.js');
+routes.addRoute('GET','/js/{filename}.js', (request,reply) => {
+	reply.file(`./client/js/${request.params.filename}.js`);
 });
-routes.addRoute('GET', '/css/deploy.css', (request,reply) => {
-	reply.file('./client/css/deploy.css');
+routes.addRoute('GET', '/css/{filename}.css', (request,reply) => {
+	reply.file(`./client/css/${request.params.filename}.css`);
+});
+routes.addRoute('GET', '/images/{filename}', (request,reply) => {
+	reply.file(`./client/images/${request.params.filename}`);
 });
 
 
