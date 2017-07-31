@@ -1,12 +1,12 @@
 {
   "name": "js-full-stack-dev-env",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "A full stack dev environment based on node js",
   "main": "index.html",
   "scripts": {
-    "prod": "node server/server.js",
+    "prod": "PORT=8000 node server/server.js",
     "dev": "concurrently --kill-others \"npm run dev_server\" \"npm run webpack\"",
-    "dev_server": "nodemon --debug --watch sever server/server.js",
+    "dev_server": "PORT=8000 nodemon --inspect --watch server server/server.js",
     "webpack": " node_modules/.bin/webpack --optimize-minimize  --watch"
   },
   "repository": {
@@ -51,5 +51,7 @@
     "webpack-dev-server": "^2.5.1",
     "webpack-livereload-plugin": "^0.11.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "grunt": "^1.0.1"
+  }
 }

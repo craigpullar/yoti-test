@@ -2,6 +2,7 @@ var webpack = require('webpack');
 var LiveReloadPlugin = require('webpack-livereload-plugin');
 
 var config = [{
+  cache : true,
   devtool: 'cheap-source-map',
   plugins: [
   new LiveReloadPlugin({
@@ -11,15 +12,15 @@ var config = [{
     'process.env': {
       'NODE_ENV': JSON.stringify('production')
     }
-  })
+  }),
   ],
   context: __dirname + '/client/js', 
   entry: {
     app: './app.js',
   },
   output: {
-    path: __dirname + '/client/js', // `dist` is the destination
-    filename: '[name].bundle.js',
+    path: __dirname + '/client/', // `dist` is the destination
+    filename: 'dist/[name].bundle.js',
   },
   module: {
     rules: [
@@ -28,6 +29,8 @@ var config = [{
       test: /\.js$/,
       exclude: /node_modules/,
       loaders: ["babel-loader"],
+      include: __dirname + '/client/js',
+
     },
     {
       test: /\.(sass|scss)$/, //Check for sass or scss file names
@@ -36,6 +39,27 @@ var config = [{
       'style-loader',
       'css-loader',
       'sass-loader',
+      ],
+      include: __dirname + '/client/css',
+    },{
+      test: /\.(gif|png|jpg|svg)$/i,
+      include: __dirname + '/client/images',
+      loaders: [
+      'file-loader?name=dist/[hash].[ext]',
+      {
+        loader: 'image-webpack-loader',
+        query: {
+          mozjpeg: {
+            dcScanOpt: 0,
+          },
+          optipng: {
+            optimizationLevel: 0,
+          },
+          pngquant: {
+            speed: 10,
+          },
+        },
+      }
       ]
     }
 

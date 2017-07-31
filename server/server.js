@@ -6,7 +6,7 @@ const server = new Hapi.Server();
 
 server.connection({ 
     host: 'localhost', 
-    port: 8000 
+    port: process.env.PORT
 });
 
 /* Register plugins */
@@ -31,7 +31,7 @@ server.views({
     layoutPath: './client/layouts',
     layout: 'default',
     //helpersPath: 'views/helpers',
-    partialsPath: './client/partials'
+    // partialsPath: './client/partials'
 });
 
 

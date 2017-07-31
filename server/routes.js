@@ -14,14 +14,8 @@ routes.addRoute('GET','/', (request,reply) => {
 
 
 //Resource Routes
-routes.addRoute('GET','/js/{filename}.js', (request,reply) => {
-	reply.file(`./client/js/${request.params.filename}.js`);
-});
-routes.addRoute('GET', '/css/{filename}.css', (request,reply) => {
-	reply.file(`./client/css/${request.params.filename}.css`);
-});
-routes.addRoute('GET', '/images/{filename}', (request,reply) => {
-	reply.file(`./client/images/${request.params.filename}`);
+routes.addRoute('GET','/dist/{filename}.js', (request,reply) => {
+	reply.file(`./client/dist/${request.params.filename}.js`);
 });
 
 
