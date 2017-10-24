@@ -9,7 +9,8 @@ class EditPageForm extends React.Component {
 
 		super(props);
 		this.state = {
-			show: props.show
+			show: props.show,
+			formState: props.formState
 		}
 
 		this.switchTab = this.switchTab.bind(this);
@@ -17,7 +18,8 @@ class EditPageForm extends React.Component {
 	}
 
 	componentWillReceiveProps(nextProps) {
-		this.setState({ show: nextProps.show });  
+		this.setState({ show: nextProps.show }); 
+		this.setState({ formState: nextProps.formState });
 	}
 
 	switchTab(active, e) {
@@ -45,13 +47,13 @@ class EditPageForm extends React.Component {
 				? "edit_page_form"
 				: "edit_page_form hidden"
 			}>
-			<h2>Page Name</h2>
+			<h2>{this.state.formState.page_name}</h2>
 			<ul className="tabs">
 			<li onClick={(e) => {this.switchTab('details',e)}} className="active">Details</li>
 			<li onClick={(e) => {this.switchTab('data',e )}} className="">Data</li>
 			</ul>
 			<div className="tab details active">
-			<NewPageForm show={true} showDashboardAction={this.props.showDashboard} hideBreadcrumbs={true}/>
+			<NewPageForm show={true} showDashboardAction={this.props.showDashboard} hideBreadcrumbs={true} formState={this.state.formState}/>
 			</div>
 			<div className="tab data">
 			<DataTab show={true} />

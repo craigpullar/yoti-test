@@ -39,9 +39,11 @@ class Dashboard extends React.Component {
 			</div>
 			<div className="col-sm-12">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus beatae recusandae possimus perferendis, dolor obcaecati veritatis pariatur itaque molestiae enim optio in, neque, nisi fugiat ut ducimus! Odit, ipsam velit!</p>
+			
 			<img src="images/diagram.jpeg" className="diagram"/>
 
 			</div>
+			<div className="clear"></div>
 			</div>
 			);
 
