@@ -6,8 +6,7 @@ let routes = require('./models/Routes');
 //Pages Routes
 routes.addRoute('GET','/', (request,reply) => {
 	var data = {
-		title: 'This is Index!',
-		message: 'Hello, World. You crazy handlebars layout'
+		title: 'Yoti - WebApp'
 	};
 	return reply.view('index', data);
 });

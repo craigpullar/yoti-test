@@ -40,7 +40,7 @@ class DataTab extends React.Component {
 			<DataOption label="Nationality" />
 			<DataOption label="Photo Verification" />
 			</div>
-
+			<br/>
 			<a className="btn inverse">Cancel</a>
 			<a className="btn">Save</a>
 			

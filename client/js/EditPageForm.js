@@ -51,7 +51,7 @@ class EditPageForm extends React.Component {
 			<li onClick={(e) => {this.switchTab('data',e )}} className="">Data</li>
 			</ul>
 			<div className="tab details active">
-			<NewPageForm show={true} showDashboardAction={this.props.showDashboard}/>
+			<NewPageForm show={true} showDashboardAction={this.props.showDashboard} hideBreadcrumbs={true}/>
 			</div>
 			<div className="tab data">
 			<DataTab show={true} />

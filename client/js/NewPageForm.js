@@ -7,7 +7,8 @@ class NewPageForm extends React.Component {
 
 		super(props);
 		this.state = {
-			show: props.show
+			show: props.show,
+			hideBreadcrumbs : props.hideBreadcrumbs
 		}
 
 	}
@@ -23,6 +24,13 @@ class NewPageForm extends React.Component {
 				? "new_page_form"
 				: "new_page_form hidden"
 			}>
+			<div className={
+				this.state.hideBreadcrumbs
+				? "breadcrumbs hidden"
+				: "breadcrumbs"
+			}>
+			<span onClick={(e) => {this.props.showDashboardAction(e);}}>Pages</span> &gt; Create a page
+			</div>
 			<form>
 			<h5>Details</h5>
 			<p>Please provide us with the following information to get started</p>
@@ -43,7 +51,7 @@ class NewPageForm extends React.Component {
 			</form>
 			</div>
 			);
-	}
+}
 }
 
 export {NewPageForm as default};

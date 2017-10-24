@@ -36,6 +36,7 @@ class App extends React.Component {
 			show_editPageForm: false
 		});
 		window.scrollTo(0,0);
+		document.querySelector('.sidebar li#create-page').classList.add('active');
 	}
 	showEditForm(e) {
 		e.preventDefault();
@@ -45,6 +46,8 @@ class App extends React.Component {
 			show_editPageForm: true
 		});
 		window.scrollTo(0,0);
+		document.querySelector('.sidebar li#create-page').classList.remove('active');
+
 	}
 
 	showDashboard(e) {
@@ -56,6 +59,8 @@ class App extends React.Component {
 			show_editPageForm: false
 		});
 		window.scrollTo(0,0);
+		document.querySelector('.sidebar li#create-page').classList.remove('active');
+
 	}
 
 	render () {

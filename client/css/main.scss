@@ -41,7 +41,7 @@ $fa-font-path: "~font-awesome/fonts";
 	}
 }
 .hidden {
-	display:none;
+	display:none!important;
 }
 .clear {
 	clear:both;
