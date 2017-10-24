@@ -55,6 +55,7 @@
   },
   "dependencies": {
     "font-awesome": "^4.7.0",
-    "grunt": "^1.0.1"
+    "grunt": "^1.0.1",
+    "react-color": "^2.13.8"
   }
 }

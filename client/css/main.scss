@@ -38,6 +38,13 @@ $fa-font-path: "~font-awesome/fonts";
 			background:#2980b9;
 			color:#fff;
 		}
+
+		&.drop {
+			border:1px solid #f1f1f1;
+			-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+			-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+			box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+		}
 	}
 }
 .hidden {
