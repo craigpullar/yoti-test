@@ -6,7 +6,7 @@
   "scripts": {
     "prod": "PORT=8000 node server/server.js",
     "dev": "concurrently --kill-others \"npm run dev_server\" \"npm run webpack\"",
-    "dev_server": "PORT=8000 nodemon --inspect --watch server server/server.js",
+    "dev_server": "PORT=8000 nodemon --inspect -e js,html,css,scss --ignore client/js --ignore client/css --ignore client/dist server/server.js ",
     "webpack": " node_modules/.bin/webpack --optimize-minimize  --watch"
   },
   "repository": {
@@ -25,6 +25,7 @@
     "babelify": "^7.3.0",
     "concurrently": "^3.5.0",
     "css-loader": "^0.28.4",
+    "file-loader": "^1.1.5",
     "grunt-babel": "^6.0.0",
     "grunt-browserify": "^5.0.0",
     "grunt-contrib-concat": "^1.0.1",
@@ -41,6 +42,7 @@
     "hapi-rethinkdb": "^2.0.1",
     "inert": "^4.1.0",
     "node-sass": "^4.5.3",
+    "nodemon": "^1.12.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "rethinkdb": "^2.3.3",
@@ -52,6 +54,7 @@
     "webpack-livereload-plugin": "^0.11.0"
   },
   "dependencies": {
+    "font-awesome": "^4.7.0",
     "grunt": "^1.0.1"
   }
 }

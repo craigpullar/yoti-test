@@ -1,11 +1,48 @@
 @import 'globals';
 @import 'mixins';
+$fa-font-path: "~font-awesome/fonts";
+@import '~font-awesome/scss/font-awesome.scss';
 @import 'partials';
 @import 'layout_default';
 @import 'view_index';
 
-html {
-	background:lightblue;
+
+.right {
+	float:right;
 }
+.btn {
+	position:relative;
+	margin:0px;
+	padding:15px 30px;
+	background:#3498db;
+	color:#fff;
+	display:inline-block;
+	cursor:pointer;
+	transition:0.2s all ease-in;
+	text-transform:uppercase;
+	i {
+		margin-left:10px;
+		color:#fff;
+	}
 
+	&:hover {
+		text-decoration:none;
+		background:#2980b9;
+	}
 
+	&.inverse {
+		background:#fff;
+		color:#3498db;
+
+		&:hover {
+			background:#2980b9;
+			color:#fff;
+		}
+	}
+}
+.hidden {
+	display:none;
+}
+.clear {
+	clear:both;
+}
